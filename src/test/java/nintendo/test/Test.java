@@ -1,5 +1,7 @@
 package nintendo.test;
 
+import nintendo.model.Adresse;
+import nintendo.model.Boutique;
 import nintendo.model.Client;
 import nintendo.model.Console;
 
@@ -17,6 +19,8 @@ public class Test {
 		Client client1 = new Client("Corentin", "Brasseur");
 		Client client2 = new Client("Felix", "Royer");
 		
+		Adresse adresse1 = new Adresse("13", "rue de la liberte", "Paris");
+		Boutique boutique1 = new Boutique("Jeux Videos", adresse1);
 		
 	}
 
