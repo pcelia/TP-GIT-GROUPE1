@@ -1,5 +1,6 @@
 package nintendo.test;
 
+import nintendo.model.Client;
 import nintendo.model.Console;
 
 public class Test {
@@ -12,6 +13,9 @@ public class Test {
 		Console c3 = new Console("Switch");
 		Console c4 = new Console("Wii");
 		Console c5 = new Console("DS");
+		
+		Client client1 = new Client("Corentin", "Brasseur");
+		Client client2 = new Client("Felix", "Royer");
 		
 		
 	}
