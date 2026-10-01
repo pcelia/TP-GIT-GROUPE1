@@ -8,7 +8,7 @@ public class Console {
 	private Double prix;
 	private LocalDate dateSortie;
 
-	private Console(String nom, Double prix, LocalDate dateSortie) {
+	public Console(String nom, Double prix, LocalDate dateSortie) {
 		this.nom = nom;
 		this.prix = prix;
 		this.dateSortie = dateSortie;
@@ -16,6 +16,22 @@ public class Console {
 
 	public String getNom() {
 		return nom;
+	}
+
+	public Double getPrix() {
+		return prix;
+	}
+
+	public void setPrix(Double prix) {
+		this.prix = prix;
+	}
+
+	public LocalDate getDateSortie() {
+		return dateSortie;
+	}
+
+	public void setDateSortie(LocalDate dateSortie) {
+		this.dateSortie = dateSortie;
 	}
 
 	public void setNom(String nom) {
