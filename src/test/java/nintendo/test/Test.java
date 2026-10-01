@@ -16,8 +16,8 @@ public class Test {
 		Console c4 = new Console("Wii");
 		Console c5 = new Console("DS");
 		
-		Client client1 = new Client("Corentin", "Brasseur");
-		Client client2 = new Client("Felix", "Royer");
+		Client client1 = new Client("Corentin", "Brasseur", null);
+		Client client2 = new Client("Felix", "Royer", null);
 		
 		Adresse adresse1 = new Adresse("13", "rue de la liberte", "Paris");
 		Boutique boutique1 = new Boutique("Jeux Videos", adresse1);
