@@ -42,9 +42,15 @@ public class Test {
 		client1.getListeAchat().add(achat1);
 		client1.getListeAchat().add(achat2);
 		
+
 		//Je fais une ligne de commentaire pour simuler une progression dans le code
+
+		Achat achat3 = new Achat(jeu3, LocalDate.now(), 9.99);
+
 		
-				
+		client2.getListeAchat().add(achat3);
+		
+			
 	}
 
 }
