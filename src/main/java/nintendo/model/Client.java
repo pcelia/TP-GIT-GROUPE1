@@ -40,6 +40,7 @@ public class Client {
 		this.listeAchat = listeAchat;
 	}
 
+	
 	@Override
 	public String toString() {
 		return "Client [nom=" + nom + ", prenom=" + prenom + ", listeAchat=" + listeAchat + "]";

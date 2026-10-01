@@ -1,12 +1,15 @@
 package nintendo.test;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
+import nintendo.model.Achat;
 import nintendo.model.Adresse;
 import nintendo.model.Boutique;
 import nintendo.model.Client;
-import nintendo.model.Console;
 import nintendo.model.Hybride;
+import nintendo.model.Jeu;
 import nintendo.model.Portable;
 import nintendo.model.Salon;
 
@@ -24,9 +27,24 @@ public class Test {
 		Client client1 = new Client("Corentin", "Brasseur", null);
 		Client client2 = new Client("Felix", "Royer", null);
 		
+		
 		Adresse adresse1 = new Adresse("13", "rue de la liberte", "Paris");
 		Boutique boutique1 = new Boutique("Jeux Videos", adresse1);
 		
+		
+		Jeu jeu1 = new Jeu("Mario", c1, boutique1);
+		Jeu jeu2 = new Jeu("Zelda", c1, boutique1);
+		Jeu jeu3 = new Jeu("Samus", c1, boutique1);
+		
+		Achat achat1 = new Achat(jeu1, LocalDate.now(), 19.99);
+		Achat achat2 = new Achat(jeu2, LocalDate.now(), 5.99);
+		
+		client1.getListeAchat().add(achat1);
+		client1.getListeAchat().add(achat2);
+		
+				
+		
+				
 	}
 
 }
