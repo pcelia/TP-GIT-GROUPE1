@@ -1,11 +1,17 @@
 package nintendo.model;
 
+import java.time.LocalDate;
+
 public class Console {
 
 	private String nom;
+	private Double prix;
+	private LocalDate dateSortie;
 
-	public Console(String nom) {
+	private Console(String nom, Double prix, LocalDate dateSortie) {
 		this.nom = nom;
+		this.prix = prix;
+		this.dateSortie = dateSortie;
 	}
 
 	public String getNom() {
